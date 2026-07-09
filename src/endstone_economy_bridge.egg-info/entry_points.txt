@@ -1,0 +1,2 @@
+[endstone]
+economy_bridge = endstone_economy_bridge:EconomyBridgePlugin

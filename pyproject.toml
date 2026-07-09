@@ -1,0 +1,23 @@
+[project]
+name = "endstone-economy-bridge"
+version = "1.0.0"
+description = "Sinkronisasi satu arah saldo JWEconomy (Coin) -> uMoney (Money) untuk server Endstone."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "endstone",
+    "PyYAML>=6.0",
+]
+
+[project.entry-points.endstone]
+economy_bridge = "endstone_economy_bridge:EconomyBridgePlugin"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+endstone_economy_bridge = ["resources/*.yml"]
