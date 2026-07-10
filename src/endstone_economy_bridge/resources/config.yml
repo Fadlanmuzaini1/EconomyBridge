@@ -1,0 +1,20 @@
+# =========================================================
+# EconomyBridge - Configuration
+# JWEconomy (Coin) <=> uMoney (Money), two-way sync.
+# On conflict (both sides changed), the HIGHER balance wins and is
+# pushed to the other side.
+# =========================================================
+settings:
+  # Print a detailed log line every time a sync actually happens.
+  debug: false
+
+  # Reconcile balances when a player joins the server.
+  sync-on-join: true
+
+  # Periodic reconciliation interval (in SECONDS) for all online players.
+  # Set to 0 to disable the periodic scheduler (join-sync only).
+  sync-interval: 60
+
+  # JWEconomy currency to sync (JWEconomy supports multiple currencies).
+  # Leave empty / null to use JWEconomy's default currency.
+  currency: null
