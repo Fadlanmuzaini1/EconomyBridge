@@ -1,2 +1,0 @@
-endstone
-PyYAML>=6.0
